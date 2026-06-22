@@ -18,3 +18,9 @@ jobs:
 
       - name: Run Backup Script
         run: python backup.py
+
+      - name: Upload Backup
+        uses: actions/upload-artifact@v4
+        with:
+          name: database-backup
+          path: backups/
