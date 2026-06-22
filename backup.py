@@ -1,5 +1,8 @@
 import shutil
+import os
 from datetime import datetime
+
+os.makedirs("backups", exist_ok=True)
 
 source_file = "sample.db"
 
